@@ -1,2 +1,2 @@
 # Joguinhos_em_Python
-pygame
+instaando a biblioteca pip install pygame
