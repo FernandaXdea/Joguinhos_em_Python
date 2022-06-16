@@ -35,11 +35,11 @@ class Passaro:
         self.altura = self.y
         self.tempo = 0
         self.contagem_imagem = 0
-        self.imagem = self.IMGS[0]
+        self.imagem = self.IMGS[0] # primeiro item da lista de imagens á de cima
 
-    def pular(self):
-        self.velocidade = -10.5
-        self.tempo = 0
+    def pular(self): 
+        self.velocidade = -10.5 # fica negativo pq a tendencia do Y em python é ir para baixo, ai para subir(posição contraria a tendencia) usa o negativo
+        self.tempo = 0 #para fazer a parabola do
         self.altura = self.y
 
     def mover(self):
@@ -161,7 +161,7 @@ class Chao:
         tela.blit(self.IMAGEM, (self.x1, self.y))
         tela.blit(self.IMAGEM, (self.x2, self.y))
 
-
+# Desenho da tela
 def desenhar_tela(tela, passaros, canos, chao, pontos):
     tela.blit(IMAGEM_BACKGROUND, (0, 0))
     for passaro in passaros:
