@@ -1,6 +1,6 @@
-import pygame # biblioteca de criação de jogos
+import pygame  # biblioteca de criação de jogos
 import os     # biblioteca que permite integrar o codigo com os arquivos do computador(para usar as imagens)
-import random # biblioteca de geração de numeros aleatorios (vamos usar para a posição dos canos que sao aleatorias)
+import random  # biblioteca de geração de numeros aleatorios (vamos usar para a posição dos canos que sao aleatorias)
 
 TELA_LARGURA = 500 # Constantes(numeros que ñ mudam)
 TELA_ALTURA = 800
@@ -169,7 +169,7 @@ def desenhar_tela(tela, passaros, canos, chao, pontos):
     for cano in canos:
         cano.desenhar(tela)
 
-    texto = FONTE_PONTOS.render(f"Pontuação: {pontos}", 1, (255, 255, 255))
+    texto = FONTE_PONTOS.render("Pontuação: {pontos}", 1, (255, 255, 255))
     tela.blit(texto, (TELA_LARGURA - 10 - texto.get_width(), 10))
     chao.desenhar(tela)
     pygame.display.update()
