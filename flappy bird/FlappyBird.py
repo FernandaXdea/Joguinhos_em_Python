@@ -1,3 +1,4 @@
+# coding=utf-8
 import pygame  # biblioteca de criação de jogos
 import os     # biblioteca que permite integrar o codigo com os arquivos do computador(para usar as imagens)
 import random  # biblioteca de geração de numeros aleatorios (vamos usar para a posição dos canos que sao aleatorias)
